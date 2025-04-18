@@ -12,7 +12,7 @@ flake8 = "==7.0.0"
 pipenv = "*"
 
 [scripts]
-start = "python -m pong_game.main"
+start = "PIPENV_VERBOSITY=-1 python -m pong_game.main"
 test = "python -m unittest test_pong.py"
 lint = "flake8 pong_game/"
 lint-ball = "flake8 pong_game/entities/ball.py"
