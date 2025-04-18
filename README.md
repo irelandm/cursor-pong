@@ -59,6 +59,8 @@ pipenv install
 
 Using pipenv:
 ```bash
+# To suppress Pipenv warnings, set this environment variable:
+export PIPENV_VERBOSITY=-1
 pipenv run start
 ```
 
