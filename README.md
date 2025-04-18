@@ -50,14 +50,24 @@ git clone https://github.com/yourusername/pong.git
 cd pong
 ```
 
-2. Install dependencies:
+2. Install dependencies using pipenv:
+```bash
+pipenv install
+```
+
+Or using pip:
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Running the Game
 
-Run the game using:
+Using pipenv:
+```bash
+pipenv run start
+```
+
+Or directly:
 ```bash
 python -m pong_game.main
 ```
@@ -74,7 +84,12 @@ python -m pong_game.main
 
 ## Testing
 
-Run the test suite:
+Using pipenv:
+```bash
+pipenv run test
+```
+
+Or directly:
 ```bash
 python -m unittest test_pong.py
 ```
@@ -94,13 +109,19 @@ The project follows these linting rules:
 
 ### Running Linting
 
-To check code quality:
+Using pipenv:
 ```bash
-flake8 pong_game/
+pipenv run lint
 ```
 
-To check a specific file:
+Or to check a specific file:
 ```bash
+pipenv run lint-ball
+```
+
+Or directly:
+```bash
+flake8 pong_game/
 flake8 pong_game/entities/ball.py
 ```
 

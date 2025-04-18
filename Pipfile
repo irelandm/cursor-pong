@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pygame-ce = "==2.5.0"
+flake8 = "==7.0.0"
+
+[dev-packages]
+flake8 = "==7.0.0"
+
+[scripts]
+start = "python -m pong_game.main"
+test = "python -m unittest test_pong.py"
+lint = "flake8 pong_game/"
+lint-ball = "flake8 pong_game/entities/ball.py"
+
+[requires]
+python_version = "3.6" 

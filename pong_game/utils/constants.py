@@ -14,7 +14,8 @@ MAX_BOUNCE_ANGLE = 75  # Maximum angle in degrees
 # Colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
-PADDLE_COLOR = WHITE
+BLUE = (0, 0, 255)
+PADDLE_COLOR = BLUE
 
 # Game rules
 WINNING_SCORE = 3
