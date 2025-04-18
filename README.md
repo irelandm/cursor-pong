@@ -55,11 +55,6 @@ cd pong
 pipenv install
 ```
 
-Or using pip:
-```bash
-pip install -r requirements.txt
-```
-
 ## Running the Game
 
 Using pipenv:
