@@ -1,0 +1,24 @@
+[flake8]
+max-line-length = 100
+exclude = .git,__pycache__,build,dist
+per-file-ignores =
+    # Allow unused imports in __init__.py files
+    __init__.py:F401
+# Ignore some common rules that might be too strict
+ignore =
+    # Line break before binary operator
+    W503,
+    # Line break after binary operator
+    W504,
+    # Missing docstring in public module
+    D100,
+    # Missing docstring in public class
+    D101,
+    # Missing docstring in public method
+    D102
+# Additional plugins
+extend-select =
+    # Enable bugbear checks
+    B,
+    # Enable docstring checks
+    D 
